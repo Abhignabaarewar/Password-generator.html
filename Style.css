@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    font-family:'Alexandria', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap'); 
+body{
+    background-image: linear-gradient(to right, #009688, #1E88E5) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+  line-height: 60px !important;
+  text-align: center;
+}
+.container{
+    position: relative;
+    display: grid;
+    background-image: radial-gradient(#96004b, #46055f) !important;
+    height: 400px;
+    max-width: 500px !important;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 40px;
+    z-index: -1;
+    box-shadow: 0 
+    12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.header{
+    padding: 10px;
+    border-radius: 10px;
+    background-image: radial-gradient(#a10553, #721397) !important;
+    color: white;
+    position: relative;
+    top: -30px;
+    left: 35px;
+    z-index: 0;
+    height: 80px;
+    width: 400px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.info{
+    color: white;
+    position: absolute;
+    top: 90px;
+    left: 25px;
+}
+.passLength{
+    position: absolute;
+    left: 70px;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px !important;
+    background-image: linear-gradient(to right, #009688, #1E88E5) !important;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+.passLength:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.passLength::placeholder{
+    color: rgba(255, 255, 255, 0.616);
+}
+.outputBox{
+    position: relative;
+    top: -60px;
+    border-radius: 10px;
+    height: 50px;
+    width: 300px;
+    background-image: linear-gradient(to right, #009688, #1E88E5) !important;
+    margin: auto;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    color: white;
+    text-align: center;
+
+}
+.outputBox::placeholder{
+    color: rgba(255, 255, 255, 0.616);
+}
+.buttons{
+    position: relative;
+    top: -70px;
+    color: white;
+}
+.genButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .copyButton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+.genButton{
+    background-image: linear-gradient(to right, #009688, #1E88E5) !important;
+    font-size: 24px !important;
+    position: absolute;
+    left: 145px;
+    width: 210px;
+    height: 60px;
+}
+.copyButton{
+    background-image: linear-gradient(to right, #009688, #1E88E5) !important;
+    position: absolute;
+    right: 70px;
+    width: 60px;
+    height: 60px;
+}
+#toast{
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 70px;
+    font-size: 17px;
+  }
+  
+  #toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 70px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 70px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 70px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 70px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
